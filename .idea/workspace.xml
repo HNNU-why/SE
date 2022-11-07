@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="90a0abeb-ff95-4708-8aa9-c082f6c915d2" name="默认的" comment="摸鱼" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2HA6RMIIk7xM0hYsNtw7XBPaCdm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/新建草稿文件" value="GitIgnore" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90a0abeb-ff95-4708-8aa9-c082f6c915d2" name="默认的" comment="" />
+      <created>1667715531289</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667715531289</updated>
+      <workItem from="1667715532592" duration="2804000" />
+      <workItem from="1667718792407" duration="294000" />
+      <workItem from="1667783729083" duration="1980000" />
+    </task>
+    <task id="LOCAL-00001" summary="add">
+      <created>1667716814637</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667716814637</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add">
+      <created>1667717123866</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667717123866</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add">
+      <created>1667717149712</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667717149712</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add">
+      <created>1667718238368</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667718238368</updated>
+    </task>
+    <task id="LOCAL-00005" summary="摸鱼">
+      <created>1667718856080</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667718856080</updated>
+    </task>
+    <task id="LOCAL-00006" summary="try to add sdk">
+      <created>1667784624453</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667784624453</updated>
+    </task>
+    <task id="LOCAL-00007" summary="try to add sdk">
+      <created>1667785143247</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667785143247</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add" />
+    <MESSAGE value="摸鱼" />
+    <MESSAGE value="try to add sdk" />
+    <option name="LAST_COMMIT_MESSAGE" value="try to add sdk" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="508" y="234" key="#Notifications" timestamp="1667717336099">
+      <screen x="0" y="24" width="1280" height="696" />
+    </state>
+    <state x="508" y="234" key="#Notifications/0.24.1280.696@0.24.1280.696" timestamp="1667717336099" />
+    <state x="490" y="172" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1667716747917">
+      <screen x="0" y="24" width="1280" height="696" />
+    </state>
+    <state x="490" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.24.1280.696@0.24.1280.696" timestamp="1667716747917" />
+    <state x="303" y="50" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1667784495828">
+      <screen x="0" y="24" width="1280" height="696" />
+    </state>
+    <state x="303" y="50" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.24.1280.696@0.24.1280.696" timestamp="1667784495828" />
+    <state x="93" y="117" width="1093" height="509" key="DiffContextDialog" timestamp="1667716468729">
+      <screen x="0" y="24" width="1280" height="696" />
+    </state>
+    <state x="93" y="117" width="1093" height="509" key="DiffContextDialog/0.24.1280.696@0.24.1280.696" timestamp="1667716468729" />
+    <state x="422" y="114" key="FileChooserDialogImpl" timestamp="1667785069731">
+      <screen x="0" y="24" width="1280" height="696" />
+    </state>
+    <state x="422" y="114" key="FileChooserDialogImpl/0.24.1280.696@0.24.1280.696" timestamp="1667785069731" />
+    <state x="121" y="23" key="SettingsEditor" timestamp="1667785101817">
+      <screen x="0" y="24" width="1280" height="696" />
+    </state>
+    <state x="121" y="23" key="SettingsEditor/0.24.1280.696@0.24.1280.696" timestamp="1667785101817" />
+    <state x="93" y="117" width="1093" height="509" key="ShowDiffWithBranchDialog" timestamp="1667717859860">
+      <screen x="0" y="24" width="1280" height="696" />
+    </state>
+    <state x="93" y="117" width="1093" height="509" key="ShowDiffWithBranchDialog/0.24.1280.696@0.24.1280.696" timestamp="1667717859860" />
+    <state x="420" y="68" key="VCS.ChangeListViewerDialog" timestamp="1667717062306">
+      <screen x="0" y="24" width="1280" height="696" />
+    </state>
+    <state x="420" y="68" key="VCS.ChangeListViewerDialog/0.24.1280.696@0.24.1280.696" timestamp="1667717062306" />
+    <state x="233" y="105" key="Vcs.Push.Dialog.v2" timestamp="1667785680139">
+      <screen x="0" y="24" width="1280" height="696" />
+    </state>
+    <state x="233" y="105" key="Vcs.Push.Dialog.v2/0.24.1280.696@0.24.1280.696" timestamp="1667785680139" />
+    <state x="455" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1667785036250">
+      <screen x="0" y="24" width="1280" height="696" />
+    </state>
+    <state x="455" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.24.1280.696@0.24.1280.696" timestamp="1667785036250" />
+  </component>
+</project>
