@@ -1,6 +1,6 @@
 # SE
 软件工程实践
-| Syntax      | Description |  版本  |
+| Syntax      | Description |  version  |
 | :---        |    :----:   |----:   |
 | 开发框架   | Django    |  3.8   |
 |开发语言 | python  |  3.7   |
