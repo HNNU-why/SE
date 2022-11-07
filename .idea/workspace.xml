@@ -26,6 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90a0abeb-ff95-4708-8aa9-c082f6c915d2" name="默认的" comment="摸鱼">
+      <change afterPath="$PROJECT_DIR$/.idea/InnovativePractice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +59,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/新建草稿文件" value="GitIgnore" />
@@ -75,7 +80,8 @@
       <updated>1667715531289</updated>
       <workItem from="1667715532592" duration="2804000" />
       <workItem from="1667718792407" duration="294000" />
-      <workItem from="1667783729083" duration="2980000" />
+      <workItem from="1667783729083" duration="5214000" />
+      <workItem from="1667791763539" duration="1190000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1667716814637</created>
@@ -133,7 +139,56 @@
       <option name="project" value="LOCAL" />
       <updated>1667785992612</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="不知道有啥用的配置文件">
+      <created>1667787338334</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667787338334</updated>
+    </task>
+    <task id="LOCAL-00010" summary="沟通管理计划">
+      <created>1667787351889</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667787351889</updated>
+    </task>
+    <task id="LOCAL-00011" summary="风险管理计划">
+      <created>1667787364529</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1667787364529</updated>
+    </task>
+    <task id="LOCAL-00012" summary="产品定义2.0">
+      <created>1667788287189</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667788287189</updated>
+    </task>
+    <task id="LOCAL-00013" summary="沟通管理计划2.0">
+      <created>1667789336388</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667789336388</updated>
+    </task>
+    <task id="LOCAL-00014" summary="风险管理计划2.0">
+      <created>1667791833123</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667791833123</updated>
+    </task>
+    <task id="LOCAL-00015" summary="UserStory1.0">
+      <created>1667792320443</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1667792320443</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,17 +221,23 @@
     <MESSAGE value="摸鱼" />
     <MESSAGE value="try to add sdk" />
     <MESSAGE value="不知道有啥用的配置文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="不知道有啥用的配置文件" />
+    <MESSAGE value="沟通管理计划" />
+    <MESSAGE value="风险管理计划" />
+    <MESSAGE value="产品定义2.0" />
+    <MESSAGE value="沟通管理计划2.0" />
+    <MESSAGE value="风险管理计划2.0" />
+    <MESSAGE value="UserStory1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="UserStory1.0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="508" y="234" key="#Notifications" timestamp="1667717336099">
       <screen x="0" y="24" width="1280" height="696" />
     </state>
     <state x="508" y="234" key="#Notifications/0.24.1280.696@0.24.1280.696" timestamp="1667717336099" />
-    <state x="490" y="172" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1667716747917">
+    <state x="490" y="172" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1667792019630">
       <screen x="0" y="24" width="1280" height="696" />
     </state>
-    <state x="490" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.24.1280.696@0.24.1280.696" timestamp="1667716747917" />
+    <state x="490" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.24.1280.696@0.24.1280.696" timestamp="1667792019630" />
     <state x="303" y="50" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1667785945433">
       <screen x="0" y="24" width="1280" height="696" />
     </state>
@@ -201,10 +262,10 @@
       <screen x="0" y="24" width="1280" height="696" />
     </state>
     <state x="420" y="68" key="VCS.ChangeListViewerDialog/0.24.1280.696@0.24.1280.696" timestamp="1667717062306" />
-    <state x="233" y="105" key="Vcs.Push.Dialog.v2" timestamp="1667785996657">
+    <state x="233" y="105" key="Vcs.Push.Dialog.v2" timestamp="1667798792433">
       <screen x="0" y="24" width="1280" height="696" />
     </state>
-    <state x="233" y="105" key="Vcs.Push.Dialog.v2/0.24.1280.696@0.24.1280.696" timestamp="1667785996657" />
+    <state x="233" y="105" key="Vcs.Push.Dialog.v2/0.24.1280.696@0.24.1280.696" timestamp="1667798792433" />
     <state x="455" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1667785036250">
       <screen x="0" y="24" width="1280" height="696" />
     </state>
