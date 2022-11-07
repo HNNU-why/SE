@@ -25,12 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90a0abeb-ff95-4708-8aa9-c082f6c915d2" name="默认的" comment="摸鱼">
-      <change afterPath="$PROJECT_DIR$/.idea/InnovativePractice.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="90a0abeb-ff95-4708-8aa9-c082f6c915d2" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/test/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserStory" beforeDir="false" afterPath="$PROJECT_DIR$/UserStory" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/新建草稿文件" value="GitIgnore" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -81,7 +80,8 @@
       <workItem from="1667715532592" duration="2804000" />
       <workItem from="1667718792407" duration="294000" />
       <workItem from="1667783729083" duration="5214000" />
-      <workItem from="1667791763539" duration="1190000" />
+      <workItem from="1667791763539" duration="5365000" />
+      <workItem from="1667808355097" duration="369000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1667716814637</created>
@@ -188,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667792320443</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="idea配置文件">
+      <created>1667798975883</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1667798975883</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,21 +234,30 @@
     <MESSAGE value="沟通管理计划2.0" />
     <MESSAGE value="风险管理计划2.0" />
     <MESSAGE value="UserStory1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="UserStory1.0" />
+    <MESSAGE value="idea配置文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea配置文件" />
   </component>
   <component name="WindowStateProjectService">
     <state x="508" y="234" key="#Notifications" timestamp="1667717336099">
       <screen x="0" y="24" width="1280" height="696" />
     </state>
     <state x="508" y="234" key="#Notifications/0.24.1280.696@0.24.1280.696" timestamp="1667717336099" />
+    <state x="96" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1667799953077">
+      <screen x="0" y="24" width="1280" height="696" />
+    </state>
+    <state x="96" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.24.1280.696@0.24.1280.696" timestamp="1667799953077" />
     <state x="490" y="172" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1667792019630">
       <screen x="0" y="24" width="1280" height="696" />
     </state>
     <state x="490" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.24.1280.696@0.24.1280.696" timestamp="1667792019630" />
-    <state x="303" y="50" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1667785945433">
+    <state x="303" y="50" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1667799995778">
       <screen x="0" y="24" width="1280" height="696" />
     </state>
-    <state x="303" y="50" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.24.1280.696@0.24.1280.696" timestamp="1667785945433" />
+    <state x="303" y="50" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.24.1280.696@0.24.1280.696" timestamp="1667799995778" />
+    <state x="121" y="23" key="#项目结构" timestamp="1667805190453">
+      <screen x="0" y="24" width="1280" height="696" />
+    </state>
+    <state x="121" y="23" key="#项目结构/0.24.1280.696@0.24.1280.696" timestamp="1667805190453" />
     <state x="93" y="117" width="1093" height="509" key="DiffContextDialog" timestamp="1667716468729">
       <screen x="0" y="24" width="1280" height="696" />
     </state>
@@ -262,13 +278,17 @@
       <screen x="0" y="24" width="1280" height="696" />
     </state>
     <state x="420" y="68" key="VCS.ChangeListViewerDialog/0.24.1280.696@0.24.1280.696" timestamp="1667717062306" />
-    <state x="233" y="105" key="Vcs.Push.Dialog.v2" timestamp="1667798792433">
+    <state x="233" y="105" key="Vcs.Push.Dialog.v2" timestamp="1667799122348">
       <screen x="0" y="24" width="1280" height="696" />
     </state>
-    <state x="233" y="105" key="Vcs.Push.Dialog.v2/0.24.1280.696@0.24.1280.696" timestamp="1667798792433" />
+    <state x="233" y="105" key="Vcs.Push.Dialog.v2/0.24.1280.696@0.24.1280.696" timestamp="1667799122348" />
     <state x="455" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1667785036250">
       <screen x="0" y="24" width="1280" height="696" />
     </state>
     <state x="455" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.24.1280.696@0.24.1280.696" timestamp="1667785036250" />
+    <state x="169" y="23" key="new project wizard" timestamp="1667800108116">
+      <screen x="0" y="24" width="1280" height="696" />
+    </state>
+    <state x="169" y="23" key="new project wizard/0.24.1280.696@0.24.1280.696" timestamp="1667800108116" />
   </component>
 </project>
