@@ -20,16 +20,14 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90a0abeb-ff95-4708-8aa9-c082f6c915d2" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/test/test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserStory" beforeDir="false" afterPath="$PROJECT_DIR$/UserStory" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/沟通管理计划.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/沟通管理计划.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,6 +264,10 @@
       <screen x="0" y="24" width="1280" height="696" />
     </state>
     <state x="422" y="114" key="FileChooserDialogImpl/0.24.1280.696@0.24.1280.696" timestamp="1667786092971" />
+    <state x="121" y="76" key="MergeDialog" timestamp="1667877485348">
+      <screen x="0" y="24" width="1280" height="696" />
+    </state>
+    <state x="121" y="76" key="MergeDialog/0.24.1280.696@0.24.1280.696" timestamp="1667877485348" />
     <state x="121" y="23" key="SettingsEditor" timestamp="1667785101817">
       <screen x="0" y="24" width="1280" height="696" />
     </state>
@@ -286,6 +288,10 @@
       <screen x="0" y="24" width="1280" height="696" />
     </state>
     <state x="455" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.24.1280.696@0.24.1280.696" timestamp="1667785036250" />
+    <state x="427" y="84" key="git4idea.branch.GitSmartOperationDialog" timestamp="1667877476745">
+      <screen x="0" y="24" width="1280" height="696" />
+    </state>
+    <state x="427" y="84" key="git4idea.branch.GitSmartOperationDialog/0.24.1280.696@0.24.1280.696" timestamp="1667877476745" />
     <state x="169" y="23" key="new project wizard" timestamp="1667800108116">
       <screen x="0" y="24" width="1280" height="696" />
     </state>
