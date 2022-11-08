@@ -26,10 +26,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90a0abeb-ff95-4708-8aa9-c082f6c915d2" name="默认的" comment="摸鱼">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/djangoProject/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/djangoProject/.idea/djangoProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/djangoProject/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/djangoProject/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/djangoProject/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/djangoProject/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/djangoProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/djangoProject/search/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/InnovativePractice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/InnovativePractice.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Craw/BiliBili/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Craw/BiliBili/demo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +70,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "com.jetbrains.django.DjangoModulesConfigurable"
   }
 }]]></component>
   <component name="RunManager">
@@ -197,7 +204,7 @@
       <workItem from="1667718792407" duration="294000" />
       <workItem from="1667783729083" duration="5214000" />
       <workItem from="1667791763539" duration="1190000" />
-      <workItem from="1667873522842" duration="316000" />
+      <workItem from="1667873522842" duration="1192000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1667716814637</created>
@@ -304,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667792320443</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="摸鱼">
+      <created>1667873878799</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1667873878799</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +347,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add" />
-    <MESSAGE value="摸鱼" />
     <MESSAGE value="try to add sdk" />
     <MESSAGE value="不知道有啥用的配置文件" />
     <MESSAGE value="沟通管理计划" />
@@ -342,7 +355,8 @@
     <MESSAGE value="沟通管理计划2.0" />
     <MESSAGE value="风险管理计划2.0" />
     <MESSAGE value="UserStory1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="UserStory1.0" />
+    <MESSAGE value="摸鱼" />
+    <option name="LAST_COMMIT_MESSAGE" value="摸鱼" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
