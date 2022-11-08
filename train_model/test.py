@@ -5,7 +5,7 @@ from datasets import load_dataset
 #定义数据集
 class Dataset(torch.utils.data.Dataset):
     def __init__(self,str):
-        self.dataset = load_from_disk('../data/ChnSentiCorp')[str]
+        self.dataset = load_from_disk('./data/ChnSentiCorp')[str]
 
     def __len__(self):
         return len(self.dataset)
