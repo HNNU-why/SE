@@ -58,7 +58,8 @@ class Spider:
             try:
                 replies = resp.json()['data']['replies']
                 for reply in replies:
-                    messageList.append(reply['content']['message'])
+                    comment = {'message': reply['content']['message'], 'time': reply['reply_control']['time_desc']}
+                    messageList.append(comment)
             except KeyError:
                 print(KeyError)
             except TypeError:
@@ -71,7 +72,18 @@ class Spider:
 
     def saveComment(self, data, name):
         print("正在保存评论。。。。")
-        with open('Data/{}.json'.format(name), 'a', encoding='utf-8') as fp:
+        with open('../Data/{}.json'.format(name), 'w', encoding='utf-8') as fp:
             json.dump(data, fp, ensure_ascii=False)
             fp.close()
         print("评论保存成功")
+
+    def readCommentFromFile(self, name):
+        print("正在读取评论")
+        jList = []
+        with open('../Data/{}.json'.format(name), 'r', encoding='UTF-8') as fp:
+            for line in fp.readlines():
+                dic = json.loads(line)
+                jList.append(dic)
+            fp.close()
+        print("评论读取成功")
+        return jList[0]

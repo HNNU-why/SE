@@ -1,15 +1,3 @@
-{#<!DOCTYPE html>#}
-{#<html lang="en">#}
-{#<head>#}
-{#    <meta charset="UTF-8">#}
-{#    <title>show</title>#}
-{#</head>#}
-{#<body>#}
-{#    {{ videoList }}#}
-{#</body>#}
-{#</html>#}
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,35 +73,49 @@
 </head>
 <body>
     <div class="wrap">
-        {% for video in videoList %}
-            {% for comment in video %}
-                {% if forloop.counter|divisibleby:"2" %}
-                    <div class="box">
-                        <div class="left">
-                            {{ comment.message }}
-                        </div>
-                        <div class="center"><span>
-                            {{ comment.time }}
-                        </span></div>
-                        <div class="right">
+        <div class="box">
+            <div class="left"></div>
+            <div class="center"><span>
+                2017
+            </span></div>
+            <div class="right">Hazy I do not know what to do, day and night miss the people I like, confusion has become my biggest enemy, let me continue to degenerate
+            </div>
+        </div>
 
-                        </div>
-                    </div>
-                {% else %}
-                    <div class="box">
-                        <div class="left">
+        <div class="box">
+            <div class="left">I gradually became addicted to the game world, trying to come true, but the pressure of learning and social society pulled me back again, tormenting me constantly
+            </div>
+            <div class="center"><span>
+                2018
+            </span></div>
+            <div class="right"></div>
+        </div>
 
-                        </div>
-                        <div class="center"><span>
-                            {{ comment.time }}
-                        </span></div>
-                        <div class="right">
-                            {{ comment.message }}
-                        </div>
-                    </div>
-                {% endif %}
-            {% endfor %}
-        {% endfor %}
+        <div class="box">
+            <div class="left"></div>
+            <div class="center"><span>
+                2019
+            </span></div>
+            <div class="right">Depression and loneliness occupied me, in a casual attempt to fitness can release introverted depression, so I fell in love with fitness, determined to go on
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">Fitness let me out of depression, tearing pain can let me feel I'm still alive, make me stand up in the swamp, I began a self-discipline life
+            </div>
+            <div class="center"><span>
+                2020
+            </span></div>
+            <div class="right"></div>
+        </div>
+
+        <div class="box">
+            <div class="left"></div>
+            <div class="center"><span>
+                2021
+            </span></div>
+            <div class="right">Self discipline fascinates me with learning. I need to be strong, I need to be respected by others, and I need money</div>
+        </div>
     </div>
 </body>
 </html>

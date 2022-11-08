@@ -1,8 +1,11 @@
+from pathlib import Path
+
 from django.shortcuts import render
 
 # Create your views here.
 from django.http import HttpResponse
 from Craw.BiliBili.Spider import Spider
+import os.path
 
 
 def craw(keyWord):
@@ -22,11 +25,16 @@ def craw(keyWord):
                   "CURRENT_FNVAL=16",
         'Connection': 'keep-alive',
     }
-    messageList = []
     spider = Spider(headers)
-    videoList = spider.getVideo(keyWord, 1)     # 取前1页个视频
-    for video in videoList:                     # 取每个视频前1页评论
-        messageList.append(spider.getComment(video, 10))
+    comment = '../Data/{}.json'.format(keyWord)
+    if os.path.exists(comment):
+        messageList = spider.readCommentFromFile(keyWord)
+    else:
+        messageList = []
+        videoList = spider.getVideo(keyWord, 5)                     # 取前5页视频
+        for video in videoList:                                     # 取每个视频前20页评论
+            messageList.append(spider.getComment(video, 20))
+        spider.saveComment(messageList, keyWord)
     return messageList
 
 
@@ -35,9 +43,8 @@ def search(request):
         keyword = request.POST.get('keyWord')
     print(keyword)
     messageList = craw(keyword)
-    return render(request, 'show.html', {"comment" : messageList})
+    return render(request, 'show.html', {"videoList": messageList})
 
 
 def index(request):
     return render(request, 'search.html')
-

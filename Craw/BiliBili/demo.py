@@ -1,6 +1,7 @@
 import requests
 import json
 import math
+import os
 
 """
     Bilibili简易评论抓取
@@ -71,9 +72,10 @@ def getReplyPageNum(oid):
 
 
 def getComment(param):
-    videoList = param[0]
+    videoList = [50756086]
     for video in videoList:
         messageList = []
+
         print("正在从", video, "获取评论")
         for page in range(1, getReplyPageNum(video) + 1):
             url = 'https://api.bilibili.com/x/v2/reply/main?mode=3&next={}&oid={}&plat=1&type=1'.format(page, video)
@@ -81,18 +83,24 @@ def getComment(param):
             try:
                 replies = resp.json()['data']['replies']
                 for reply in replies:
-                    messageList.append(reply['content']['message'])
+                    # messageList.append(reply['content']['message'])
+                    comment = {'message': reply['content']['message'], 'time': reply['reply_control']['time_desc']}
+                    messageList.append(comment)
             except KeyError:
                 print(KeyError)
             # 控制每个视频爬取的评论页数
             if page > 30:
                 break
-        saveComment(messageList, param[1])
+        print(messageList)
+        # saveComment(messageList, param[1])
 
 
 def saveComment(messageList, search):
     print("正在保存评论。。。。")
-    with open('Data/{}.json'.format(search), 'a', encoding='utf-8') as fp:
+    path = '{}.json'.format(search)
+    # if not os.path.exists(path):
+    #     os.mknod(path)                            # Linux环境下
+    with open(path, 'a', encoding='utf-8') as fp:
         json.dump(messageList, fp, ensure_ascii=False)
         fp.close()
     print("评论保存成功")
