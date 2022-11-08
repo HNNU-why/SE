@@ -26,11 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90a0abeb-ff95-4708-8aa9-c082f6c915d2" name="默认的" comment="摸鱼">
-      <change afterPath="$PROJECT_DIR$/.idea/InnovativePractice.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Craw/BiliBili/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Craw/BiliBili/demo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,22 +51,138 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2HA6RMIIk7xM0hYsNtw7XBPaCdm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/新建草稿文件" value="GitIgnore" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="项目" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -82,6 +197,7 @@
       <workItem from="1667718792407" duration="294000" />
       <workItem from="1667783729083" duration="5214000" />
       <workItem from="1667791763539" duration="1190000" />
+      <workItem from="1667873522842" duration="316000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1667716814637</created>
@@ -192,7 +308,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -214,7 +330,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add" />
@@ -229,46 +344,14 @@
     <MESSAGE value="UserStory1.0" />
     <option name="LAST_COMMIT_MESSAGE" value="UserStory1.0" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="508" y="234" key="#Notifications" timestamp="1667717336099">
-      <screen x="0" y="24" width="1280" height="696" />
-    </state>
-    <state x="508" y="234" key="#Notifications/0.24.1280.696@0.24.1280.696" timestamp="1667717336099" />
-    <state x="490" y="172" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1667792019630">
-      <screen x="0" y="24" width="1280" height="696" />
-    </state>
-    <state x="490" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.24.1280.696@0.24.1280.696" timestamp="1667792019630" />
-    <state x="303" y="50" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1667785945433">
-      <screen x="0" y="24" width="1280" height="696" />
-    </state>
-    <state x="303" y="50" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.24.1280.696@0.24.1280.696" timestamp="1667785945433" />
-    <state x="93" y="117" width="1093" height="509" key="DiffContextDialog" timestamp="1667716468729">
-      <screen x="0" y="24" width="1280" height="696" />
-    </state>
-    <state x="93" y="117" width="1093" height="509" key="DiffContextDialog/0.24.1280.696@0.24.1280.696" timestamp="1667716468729" />
-    <state x="422" y="114" key="FileChooserDialogImpl" timestamp="1667786092971">
-      <screen x="0" y="24" width="1280" height="696" />
-    </state>
-    <state x="422" y="114" key="FileChooserDialogImpl/0.24.1280.696@0.24.1280.696" timestamp="1667786092971" />
-    <state x="121" y="23" key="SettingsEditor" timestamp="1667785101817">
-      <screen x="0" y="24" width="1280" height="696" />
-    </state>
-    <state x="121" y="23" key="SettingsEditor/0.24.1280.696@0.24.1280.696" timestamp="1667785101817" />
-    <state x="93" y="117" width="1093" height="509" key="ShowDiffWithBranchDialog" timestamp="1667717859860">
-      <screen x="0" y="24" width="1280" height="696" />
-    </state>
-    <state x="93" y="117" width="1093" height="509" key="ShowDiffWithBranchDialog/0.24.1280.696@0.24.1280.696" timestamp="1667717859860" />
-    <state x="420" y="68" key="VCS.ChangeListViewerDialog" timestamp="1667717062306">
-      <screen x="0" y="24" width="1280" height="696" />
-    </state>
-    <state x="420" y="68" key="VCS.ChangeListViewerDialog/0.24.1280.696@0.24.1280.696" timestamp="1667717062306" />
-    <state x="233" y="105" key="Vcs.Push.Dialog.v2" timestamp="1667798792433">
-      <screen x="0" y="24" width="1280" height="696" />
-    </state>
-    <state x="233" y="105" key="Vcs.Push.Dialog.v2/0.24.1280.696@0.24.1280.696" timestamp="1667798792433" />
-    <state x="455" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1667785036250">
-      <screen x="0" y="24" width="1280" height="696" />
-    </state>
-    <state x="455" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.24.1280.696@0.24.1280.696" timestamp="1667785036250" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Craw/BiliBili/demo.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
