@@ -26,8 +26,6 @@
   <component name="ChangeListManager">
     <list default="true" id="90a0abeb-ff95-4708-8aa9-c082f6c915d2" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserStory" beforeDir="false" afterPath="$PROJECT_DIR$/UserStory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/沟通管理计划.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/沟通管理计划.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +78,7 @@
       <workItem from="1667783729083" duration="5214000" />
       <workItem from="1667791763539" duration="5365000" />
       <workItem from="1667808355097" duration="369000" />
+      <workItem from="1667878055795" duration="3811000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1667716814637</created>
@@ -193,7 +192,28 @@
       <option name="project" value="LOCAL" />
       <updated>1667798975883</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="用户故事">
+      <created>1667877880275</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1667877880275</updated>
+    </task>
+    <task id="LOCAL-00018" summary="奇怪的配置文件">
+      <created>1667877894475</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1667877894475</updated>
+    </task>
+    <task id="LOCAL-00019" summary="沟通管理计划2.0">
+      <created>1667877907654</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1667877907654</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,11 +249,13 @@
     <MESSAGE value="沟通管理计划" />
     <MESSAGE value="风险管理计划" />
     <MESSAGE value="产品定义2.0" />
-    <MESSAGE value="沟通管理计划2.0" />
     <MESSAGE value="风险管理计划2.0" />
     <MESSAGE value="UserStory1.0" />
     <MESSAGE value="idea配置文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea配置文件" />
+    <MESSAGE value="用户故事" />
+    <MESSAGE value="奇怪的配置文件" />
+    <MESSAGE value="沟通管理计划2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="沟通管理计划2.0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="508" y="234" key="#Notifications" timestamp="1667717336099">
@@ -280,10 +302,10 @@
       <screen x="0" y="24" width="1280" height="696" />
     </state>
     <state x="420" y="68" key="VCS.ChangeListViewerDialog/0.24.1280.696@0.24.1280.696" timestamp="1667717062306" />
-    <state x="233" y="105" key="Vcs.Push.Dialog.v2" timestamp="1667799122348">
+    <state x="233" y="105" key="Vcs.Push.Dialog.v2" timestamp="1667877915857">
       <screen x="0" y="24" width="1280" height="696" />
     </state>
-    <state x="233" y="105" key="Vcs.Push.Dialog.v2/0.24.1280.696@0.24.1280.696" timestamp="1667799122348" />
+    <state x="233" y="105" key="Vcs.Push.Dialog.v2/0.24.1280.696@0.24.1280.696" timestamp="1667877915857" />
     <state x="455" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1667785036250">
       <screen x="0" y="24" width="1280" height="696" />
     </state>
