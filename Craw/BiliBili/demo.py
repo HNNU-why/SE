@@ -49,7 +49,8 @@ def getVideo():
 
 # 获取评论页数
 def getReplyPageNum(oid):
-    url = "https://api.bilibili.com/x/v2/reply?&jsonp=jsonp&pn=1" + "&type=1&oid=" + str(oid) + "&sort=2"
+    url = "https://api.bilibili.com/x/v2/reply?&jsonp=jsonp&pn=1" + \
+        "&type=1&oid=" + str(oid) + "&sort=2"
     respond = requests.get(url)
     res_dirct = json.loads(respond.text)
     replyPageNum = 1
@@ -78,13 +79,16 @@ def getComment():
 
         print("正在从", video, "获取评论")
         for page in range(1, getReplyPageNum(video) + 1):
-            url = 'https://api.bilibili.com/x/v2/reply/main?mode=3&next={}&oid={}&plat=1&type=1'.format(page, video)
+            url = 'https://api.bilibili.com/x/v2/reply/main?mode=3&next={}&oid={}&plat=1&type=1'.format(
+                page, video)
             resp = requests.get(url, headers=headers)
             try:
                 replies = resp.json()['data']['replies']
                 for reply in replies:
                     # messageList.append(reply['content']['message'])
-                    comment = {'message': reply['content']['message'], 'time': reply['reply_control']['time_desc']}
+                    comment = {
+                        'message': reply['content']['message'],
+                        'time': reply['reply_control']['time_desc']}
                     messageList.append(comment)
             except KeyError:
                 print(KeyError)

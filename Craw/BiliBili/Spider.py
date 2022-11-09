@@ -29,7 +29,8 @@ class Spider:
 
     # 获取评论页数
     def getReplyPageNum(self, oid):
-        url = "https://api.bilibili.com/x/v2/reply?&jsonp=jsonp&pn=1" + "&type=1&oid=" + str(oid) + "&sort=2"
+        url = "https://api.bilibili.com/x/v2/reply?&jsonp=jsonp&pn=1" + \
+            "&type=1&oid=" + str(oid) + "&sort=2"
         respond = requests.get(url)
         res_dirct = json.loads(respond.text)
         replyPageNum = 1
@@ -54,12 +55,15 @@ class Spider:
         messageList = []
         print("正在从视频", video, " 获取评论")
         for page in range(1, self.getReplyPageNum(video) + 1):
-            url = 'https://api.bilibili.com/x/v2/reply/main?mode=3&next={}&oid={}&plat=1&type=1'.format(page, video)
+            url = 'https://api.bilibili.com/x/v2/reply/main?mode=3&next={}&oid={}&plat=1&type=1'.format(
+                page, video)
             resp = requests.get(url, headers=self.headers)
             try:
                 replies = resp.json()['data']['replies']
                 for reply in replies:
-                    comment = {'message': reply['content']['message'], 'time': reply['reply_control']['time_desc']}
+                    comment = {
+                        'message': reply['content']['message'],
+                        'time': reply['reply_control']['time_desc']}
                     messageList.append(comment)
             except KeyError:
                 print(KeyError)
