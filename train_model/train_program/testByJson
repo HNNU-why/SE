@@ -1,0 +1,9 @@
+import torch
+from datasets import load_from_disk
+from transformers import BertTokenizer
+from datasets import load_dataset
+from LastModel import predo
+
+name = input()
+p = predo(name)
+print(p.get_positive())
