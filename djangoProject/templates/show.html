@@ -18,6 +18,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        {#* {#}
+        {#    margin: 0;#}
+        {#    padding: 0;#}
+        {#    box-sizing: border-box;#}
+        {#    font-family: 'Poppins', sans-serif;#}
+        {#}#}
+
+        .bar {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+
+        }
+
+        ul {
+            position: relative;
+            {#display: flex;#}
+            gap: 25px;
+        }
+
+        ul li {
+            position: relative;
+            list-style: none;
+            width: 60px;
+            height: 60px;
+            background: #fff;
+            border-radius: 60px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 16px 25px rgba(0, 0, 0, 0.1);
+            transition: 0.5s;
+            margin-top: 10px;
+        }
+
+        ul li:hover {
+            height: 100px;
+            box-shadow: 0 16px 25px rgba(0, 0, 0, 0);
+        }
+
+        ul li::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 60px;
+            background: linear-gradient(45deg, var(--i), var(--j));
+            opacity: 0;
+            transition: 0.5s;
+
+        }
+
+        ul li:hover::before {
+            opacity: 1;
+        }
+
+        ul li::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            border-radius: 60px;
+            background: linear-gradient(45deg, var(--i), var(--j));
+            transition: 0.5s;
+            filter: blur(15px);
+            z-index: -1;
+            opacity: 0;
+        }
+
+        ul li:hover::after {
+            opacity: 0.5;
+        }
+
+        ul li ion-icon {
+            color: #777;
+            font-size: 1.75em;
+            transition: 0.5s;
+            transition-delay: 0.25s;
+        }
+
+        ul li:hover ion-icon {
+            transform: scale(0);
+            color: #fff;
+            transition-delay: 0s;
+        }
+
+        ul li span {
+            position: absolute;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        ul li .title {
+            color: #fff;
+            font-size: 1em;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transform: scale(0);
+            transition: 0.5s;
+            transition-delay: 0s;
+            font-family: 微软雅黑;
+        }
+
+        ul li:hover .title {
+            transform: scale(0.9);
+            transition-delay: 0.25s;
+        }
         *{
             margin: 0;
             padding: 0;
@@ -25,7 +132,7 @@
         body{
             display: flex;
             justify-content: center;
-            background-color: rgb(164, 170, 206);
+            background-color: rgb(255, 117, 117);
         }
         .wrap{
             width: 1000px;
@@ -39,7 +146,7 @@
             left: 50%;
             width: 5px;
             z-index: -999;
-            height: 1000px;
+            height: 100%;
             background-color: rgba(255,255,255,.5);
         }
         .box{
@@ -53,10 +160,18 @@
         .left,.right{
             position: relative;
             width: 40%;
-            height: 120px;
-            border-radius: 15px;
+            font-family: 微软雅黑, serif;
+            height: 133px;
+            padding: 10px;
+            border-radius: 10px;
             text-align: center;
             color: rgb(90, 90, 90);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            line-height: 20px;
             /* background-color: rgba(255,255,255,.5); */
         }
         .box:nth-child(even) .left{
@@ -75,11 +190,12 @@
         }
         .center>span{
             width: 120px;
+            color: aliceblue;
             border-radius: 10px;
             text-align:center;
             font: 900 24px '';
             line-height: 50px;
-            background-color: #fff;
+            background-color: #ee6666;
         }
     </style>
 </head>
@@ -88,6 +204,7 @@
         {% for video in videoList %}
             {% for comment in video %}
                 {% if forloop.counter|divisibleby:"2" %}
+
                     <div class="box">
                         <div class="left">
                             {{ comment.message }}
@@ -102,7 +219,6 @@
                 {% else %}
                     <div class="box">
                         <div class="left">
-
                         </div>
                         <div class="center"><span>
                             {{ comment.time }}
@@ -115,5 +231,35 @@
             {% endfor %}
         {% endfor %}
     </div>
+    <div class="bar">
+        <ul>
+            <li style="--i:#a955ff;--j:#ea51ff;">
+                <span class="icon">
+                    <ion-icon name="search-outline"></ion-icon>
+                </span>
+                <span class="title"><a href="http://localhost:8000" >搜索</a></span>
+            </li>
+            <li style="--i:#FF9966;--j:#FF5E62;">
+                <span class="icon">
+                    <ion-icon name="reader-outline"></ion-icon>
+                </span>
+                <span class="title"><a href="http://localhost:8000" >简介</a></span>
+            </li>
+            <li style="--i:#80FF72;--j:#7EE8FA;">
+                <span class="icon">
+                    <ion-icon name="return-up-back-outline"></ion-icon>
+                </span>
+                <span class="title"><a href="javascript:;" onclick="javascript:history.back()" >返回</a></span>
+            </li>
+            <li style="--i:#56CCF2;--j:#2F80ED;">
+                <span class="icon">
+                    <ion-icon name="arrow-up-outline"></ion-icon>
+                </span>
+                <span class="title"><a href="javascript:scroll(0, 0)" >顶部</a></span>
+            </li>
+        </ul>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div/>
 </body>
 </html>

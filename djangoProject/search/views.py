@@ -1,11 +1,9 @@
-from pathlib import Path
+import os.path
 
 from django.shortcuts import render
 
 # Create your views here.
-from django.http import HttpResponse
 from Craw.BiliBili.Spider import Spider
-import os.path
 
 
 def craw(keyWord):
@@ -31,18 +29,21 @@ def craw(keyWord):
         messageList = spider.readCommentFromFile(keyWord)
     else:
         messageList = []
-        videoList = spider.getVideo(keyWord, 5)                     # 取前5页视频
-        for video in videoList:                                     # 取每个视频前20页评论
+        videoList = spider.getVideo(keyWord, 5)  # 取前5页视频
+        for video in videoList:  # 取每个视频前20页评论
             messageList.append(spider.getComment(video, 20))
         spider.saveComment(messageList, keyWord)
     return messageList
 
 
 def search(request):
+    keyword = ''
     if request.method == 'POST':
         keyword = request.POST.get('keyWord')
-    print(keyword)
     messageList = craw(keyword)
+    for message in messageList:
+        if not len(message) % 2 == 0:
+            message.pop()
     return render(request, 'show.html', {"videoList": messageList})
 
 
