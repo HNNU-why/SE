@@ -1,7 +1,7 @@
-import requests
 import json
 import math
-import os
+
+import requests
 
 """
     Bilibili简易评论抓取
@@ -25,6 +25,7 @@ headers = {
 
 
 # 获取视频列表
+# noinspection PyStringFormat
 def getVideo():
     videoList = []
     search = input("输入搜索关键字：")
@@ -53,7 +54,6 @@ def getReplyPageNum(oid):
     res_dirct = json.loads(respond.text)
     replyPageNum = 1
     try:
-        replyNum = int(res_dirct['data']['page']['acount'])
         replyPageCount = int(res_dirct['data']['page']['count'])
         replyPageSize = int(res_dirct['data']['page']['size'])
         replyPageNum = math.ceil(replyPageCount / replyPageSize)
@@ -71,7 +71,7 @@ def getReplyPageNum(oid):
 #     return aid
 
 
-def getComment(param):
+def getComment():
     videoList = [50756086]
     for video in videoList:
         messageList = []
@@ -107,4 +107,4 @@ def saveComment(messageList, search):
 
 
 if __name__ == "__main__":
-    getComment(getVideo())
+    getComment()

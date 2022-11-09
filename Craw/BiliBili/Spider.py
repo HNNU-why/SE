@@ -12,6 +12,7 @@ class Spider:
         videoList = []
         print('正在获取视频列表.......')
         for i in range(maxVideo):
+            # noinspection PyStringFormat
             video_url = 'https://api.bilibili.com/x/web-interface/search/all/v2?keyword={}&page={' \
                         '}&duration=&tids_1=&tids_2=&__refresh__=true&_extra=&highlight=1&single_column=0&jsonp=jsonp' \
                         ''.format(search, i + 1)
