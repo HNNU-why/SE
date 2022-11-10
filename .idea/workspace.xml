@@ -26,13 +26,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90a0abeb-ff95-4708-8aa9-c082f6c915d2" name="默认的" comment="摸鱼">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Craw/BiliBili/Spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/Craw/BiliBili/Spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Craw/BiliBili/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Craw/BiliBili/demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_model/train_program/1-DNN_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_model/train_program/1-DNN_train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_model/train_program/3-DNN_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_model/train_program/3-DNN_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/一带一路.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/一带一路.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject/search/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/search/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject/search/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/search/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/templates/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/templates/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_model/data/ChnSentiCorp/train/save_json_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/train_model/data/ChnSentiCorp/train/save_json_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train_model/train_program/permodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_model/train_program/permodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_model/train_program/中文snowNLP.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_model/train_program/中文snowNLP.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,17 +72,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/SE/djangoProject/manage.py",
-    "settings.editor.selected.configurable": "com.leinardi.pycharm.pylint.PylintConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/SE/djangoProject/templates/plugins&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SE\djangoProject\templates\plugins" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SE\djangoProject\templates" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.manage">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -262,7 +273,9 @@
       <workItem from="1667791763539" duration="1190000" />
       <workItem from="1667873522842" duration="15167000" />
       <workItem from="1667955695427" duration="10897000" />
-      <workItem from="1667976554252" duration="1232000" />
+      <workItem from="1667976554252" duration="1440000" />
+      <workItem from="1667978017826" duration="9196000" />
+      <workItem from="1668039957254" duration="1475000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1667716814637</created>
@@ -418,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667975992179</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="摸鱼">
+      <created>1667977852262</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1667977852262</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,10 +478,24 @@
     <MESSAGE value="摸鱼" />
     <option name="LAST_COMMIT_MESSAGE" value="摸鱼" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/djangoProject/templates/jquery.easypiechart.min.html</url>
+          <line>10</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SE$urls.coverage" NAME="urls Coverage Results" MODIFIED="1667891586033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/djangoProject/search" />
+    <SUITE FILE_PATH="coverage/SE$permodel.coverage" NAME="permodel Coverage Results" MODIFIED="1667987373465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/train_model/train_program" />
     <SUITE FILE_PATH="coverage/SE$Spider.coverage" NAME="Spider Coverage Results" MODIFIED="1667898060051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Craw/BiliBili" />
     <SUITE FILE_PATH="coverage/SE$demo.coverage" NAME="demo Coverage Results" MODIFIED="1667899254140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Craw/BiliBili" />
-    <SUITE FILE_PATH="coverage/SE$manage.coverage" NAME="manage Coverage Results" MODIFIED="1667956489291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/djangoProject" />
+    <SUITE FILE_PATH="coverage/SE$manage.coverage" NAME="manage Coverage Results" MODIFIED="1668040500607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/djangoProject" />
+    <SUITE FILE_PATH="coverage/SE$trans.coverage" NAME="数据trans Coverage Results" MODIFIED="1667984074438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/train_model/data" />
   </component>
 </project>

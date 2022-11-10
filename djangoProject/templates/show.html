@@ -200,6 +200,7 @@
     </style>
 </head>
 <body>
+    <form method="post" action="{% url 'outcome' %}" id="formId"></form>
     <div class="wrap">
         {% for video in videoList %}
             {% for comment in video %}
@@ -207,7 +208,7 @@
 
                     <div class="box">
                         <div class="left">
-                            {{ comment.message }}
+                            {{ comment.text }}
                         </div>
                         <div class="center"><span>
                             {{ comment.time }}
@@ -224,7 +225,7 @@
                             {{ comment.time }}
                         </span></div>
                         <div class="right">
-                            {{ comment.message }}
+                            {{ comment.text }}
                         </div>
                     </div>
                 {% endif %}
@@ -243,7 +244,7 @@
                 <span class="icon">
                     <ion-icon name="reader-outline"></ion-icon>
                 </span>
-                <span class="title"><a href="http://localhost:8000" >简介</a></span>
+                <span class="title"><a onclick="document:formId.submit()">结果</a></span>
             </li>
             <li style="--i:#80FF72;--j:#7EE8FA;">
                 <span class="icon">

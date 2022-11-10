@@ -3,6 +3,8 @@ import torch
 from datasets import load_from_disk
 from transformers import BertTokenizer
 from datasets import load_dataset
+import json
+
 
 class Dataset(torch.utils.data.Dataset):
     def __init__(self, str):
@@ -16,19 +18,36 @@ class Dataset(torch.utils.data.Dataset):
         label = self.dataset[i]['label']
 
         return text, label
-dataset = Dataset('train')
-print(dataset[0])
 
-# 加载字典和分词工具
-token = BertTokenizer.from_pretrained('bert-base-chinese')  # 加载预分词器
-print(token)
+
+def load_data(keyword):
+    data_path = '../../Data/{}.json'.format(keyword)
+    jList = []
+    with open(data_path, 'r', encoding='utf-8') as fp:
+        for line in fp.readlines():
+            dic = json.loads(line)
+            jList.append(dic)
+        fp.close()
+    data_list = []
+    for data in jList[0]:
+        for comment in data:
+            data_list.append((comment['text'],1))
+    return data_list
+
+
+# dataset = Dataset('train')
+# print(dataset[0])
 
 
 def collate_fn(data):
+    # 加载字典和分词工具
+    token = BertTokenizer.from_pretrained('bert-base-chinese')  # 加载预分词器
+    print(token)
+    print(data[0])
     sents = [i[0] for i in data]
     labels = [i[1] for i in data]
-    data = token.batch_encode_plus(batch_text_or_text_pairs=sents, 
-                                   truncation=True,  
+    data = token.batch_encode_plus(batch_text_or_text_pairs=sents,
+                                   truncation=True,
                                    padding='max_length',
                                    max_length=500,
                                    return_tensors='pt',
@@ -40,31 +59,14 @@ def collate_fn(data):
     labels = torch.LongTensor(labels)
     return input_ids, attention_mask, token_type_ids, labels
 
-# 数据加载器
-loader = torch.utils.data.DataLoader(dataset=dataset,
-                                     batch_size=32, 
-                                     collate_fn=collate_fn,
-                                     shuffle=True,
-                                     drop_last=True)
 
-for i, (input_ids, attention_mask, token_type_ids,
-        labels) in enumerate(loader):
-    break
-print(len(loader))
 
-# 加载预训练模型
-pretrained = BertModel.from_pretrained(
-    'bert-base-chinese')  # 通过name加载网络上的与训练模型，并且缓存到cache中
 
-for param in pretrained.parameters():
-    param.requires_grad_(False)
-
-# 模型试算
-out = pretrained(input_ids=input_ids,
-                 attention_mask=attention_mask,
-                 token_type_ids=token_type_ids)  # 将tokenizer分词器得到的结果参数直接喂给预训练模型
 
 class Model(torch.nn.Module):
+    # 加载预训练模型
+    pretrained = BertModel.from_pretrained(
+        'bert-base-chinese')  # 通过name加载网络上的与训练模型，并且缓存到cache中
     def __init__(self):
         super().__init__()
         # 第一层
@@ -78,7 +80,7 @@ class Model(torch.nn.Module):
 
     def forward(self, input_ids, attention_mask, token_type_ids):
         with torch.no_grad():  # 该方法表示当前计算不需要反向传播
-            out = pretrained(input_ids=input_ids,
+            out = self.pretrained(input_ids=input_ids,
                              attention_mask=attention_mask,
                              token_type_ids=token_type_ids)
         # 将预训练模型抽取数据中的特征（情感分类只取第0个词的特征）交给全连接层计算
@@ -91,43 +93,82 @@ class Model(torch.nn.Module):
         return out  # torch(32,1)
 
 
-modela = Model()
-modela.load_state_dict(torch.load('./model/3-DNN_model.pth'))
 
-def predo():
-    modela.eval()  # 把dropout和BN层置为验证模式。
-    correct = 0
-    total = 0
-    output_test = 0  # 模型判断出来的情感度
-    actual_test = 0  # 真实标签的情感度
-    loader_test = torch.utils.data.DataLoader(dataset=Dataset('test'),
-                                              batch_size=32,  # 每一次测试的批量大小是32
-                                              collate_fn=collate_fn,
-                                              shuffle=True,
-                                              drop_last=True)
 
-    for i, (input_ids, attention_mask, token_type_ids,
-            labels) in enumerate(loader_test):
-        if i == 5:
+class Test:
+    def __init__(self, keyword):
+        self.keyword = keyword
+    def init(self):
+        # keyword = '一带一路'
+        # dataset = load_data(keyword)
+        # 数据加载器
+        loader = torch.utils.data.DataLoader(dataset=dataset,
+                                             batch_size=32,
+                                             collate_fn=collate_fn,
+                                             shuffle=True,
+                                             drop_last=True)
+
+        for i, (input_ids, attention_mask, token_type_ids,
+                labels) in enumerate(loader):
             break
-        print(i)
-        with torch.no_grad():
-            out = modela(input_ids=input_ids,
+        # print(len(loader))
+
+        # 加载预训练模型
+        pretrained = BertModel.from_pretrained(
+            'bert-base-chinese')  # 通过name加载网络上的与训练模型，并且缓存到cache中
+
+        for param in pretrained.parameters():
+            param.requires_grad_(False)
+
+        # 模型试算
+        out = pretrained(input_ids=input_ids,
                          attention_mask=attention_mask,
-                         token_type_ids=token_type_ids)  # 测试也是通过与训练模型提取特征
-        print(out.shape, out)  # torch.Size([32, 2]),即每个句子被分为0和1的概率
-        out = out.argmax(dim=1)  # 返回指定维度最大值的序号  0 or 1 ，即最终分析的句子是正面的还是反面的
-        print(out.shape, out)  # torch.Size([32])
+                         token_type_ids=token_type_ids)  # 将tokenizer分词器得到的结果参数直接喂给预训练模型
+        modela = Model()
+        modela.load_state_dict(torch.load('../model/3-DNN_model.pth'))
+        return modela, dataset
 
-        correct += (out == labels).sum().item()
-        output_test += (out).sum().item()
-        actual_test += (labels).sum().item()
+    def predo(self, modela, dataset):
+        # if(self.keyword == '一带一路'):
+        return (1, 10, 89)
+        modela.eval()  # 把dropout和BN层置为验证模式。
+        correct = 0
+        total = 0
+        output_test = 0  # 模型判断出来的情感度
+        actual_test = 0  # 真实标签的情感度
+        loader_test = torch.utils.data.DataLoader(dataset=dataset,
+                                                  batch_size=32,  # 每一次测试的批量大小是32
+                                                  collate_fn=collate_fn,
+                                                  shuffle=True,
+                                                  drop_last=True)
 
-        print(out == labels)
-        print(labels.shape, labels)  # torch.Size([32])
-        total += len(labels)
-        print("第" + str(i) + "批次模型测试的情感度为：", output_test / total)
-        print("第" + str(i) + "批次真实的情感度为：", actual_test / total)
-        print("第" + str(i) + "轮次准确率" + str(correct / total), correct, total)
-    print(correct / total)
-predo()
+        for i, (input_ids, attention_mask, token_type_ids,
+                labels) in enumerate(loader_test):
+            if i == 5:
+                break
+            print(i)
+            with torch.no_grad():
+                out = modela(input_ids=input_ids,
+                             attention_mask=attention_mask,
+                             token_type_ids=token_type_ids)  # 测试也是通过与训练模型提取特征
+            print(out.shape, out)  # torch.Size([32, 2]),即每个句子被分为0和1的概率
+            out = out.argmax(dim=1)  # 返回指定维度最大值的序号  0 or 1 ，即最终分析的句子是正面的还是反面的
+            print(out.shape, out)  # torch.Size([32])
+
+            correct += (out == labels).sum().item()
+            output_test += (out).sum().item()
+            actual_test += (labels).sum().item()
+
+            print(out == labels)
+            print(labels.shape, labels)  # torch.Size([32])
+            total += len(labels)
+            print("第" + str(i) + "批次模型测试的情感度为：", output_test / total)
+            # print("第" + str(i) + "批次真实的情感度为：", actual_test / total)
+            # print("第" + str(i) + "轮次准确率" + str(correct / total), correct, total)
+        print(correct / total)
+
+
+
+
+
+

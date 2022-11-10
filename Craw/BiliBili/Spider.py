@@ -62,7 +62,7 @@ class Spider:
                 replies = resp.json()['data']['replies']
                 for reply in replies:
                     comment = {
-                        'message': reply['content']['message'],
+                        'text': reply['content']['message'],
                         'time': reply['reply_control']['time_desc']}
                     messageList.append(comment)
             except KeyError:
@@ -91,4 +91,5 @@ class Spider:
                 jList.append(dic)
             fp.close()
         print("评论读取成功")
+        print(jList[0])
         return jList[0]

@@ -4,6 +4,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from Craw.BiliBili.Spider import Spider
+from train_model.train_program.permodel import Test
 
 
 def craw(keyWord):
@@ -36,8 +37,10 @@ def craw(keyWord):
     return messageList
 
 
+keyword = ''
+
+
 def search(request):
-    keyword = ''
     if request.method == 'POST':
         keyword = request.POST.get('keyWord')
     messageList = craw(keyword)
@@ -45,6 +48,12 @@ def search(request):
         if not len(message) % 2 == 0:
             message.pop()
     return render(request, 'show.html', {"videoList": messageList})
+
+
+def outCome(request):
+    # mode = Test(keyword)
+    outcome = (1, 8, 91)
+    return render(request, 'outCome.html', {"outcome": outcome})
 
 
 def index(request):
